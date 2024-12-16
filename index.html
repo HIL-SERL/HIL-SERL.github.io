@@ -220,7 +220,7 @@
     <!-- New Image Section below Abstract -->
     <div class="content has-text-centered">
       <div class="container">
-      <h2 class="title is-3">System Overview</h2>
+      <h2 class="title is-3">Method Overview</h2>
         <div class="columns is-centered">
           <div class="column is-8">
             <img src="./static/images/system.png" alt="Abstract Figure">
@@ -229,6 +229,20 @@
       </div>
     </div>
     <div style="height: 30px;"></div>
+
+    <div class="content">
+      <div class="container">
+        <p>HIL-SERL is a system for training state of the art manipulation policies using Reinforcement Learning.
+          
+          <ul>
+            <li>We first tele-operate the robot to collect positive and negative samples and train a binary reward classifier.</li>
+            <li>We then collect a small set of demonstrations, which is added to the demo buffer at the start of RL training.</li>
+            <li>During online training, we use the binary classifier as a sparse reward signal and provide human interventions. Initially, we provide more frequent interventions to demonstrate ways of solving the task from various states and prevent the robot from performing undesirable behavior. We gradually reduce the amount of interventions as the policy reaches higher success rate and faster cycle times.</li>
+          </ul></p>
+      </div>
+    </div>
+    <div style="height: 30px;"></div>
+
 
   <div class="content has-text-centered">
     <div class="container">
